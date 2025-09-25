@@ -12,11 +12,19 @@
 
 ### 题目描述
 
+{problem_description}
 
 ### 示例
 
+{problem_examples}
 
 ### 约束条件
+
+{problem_constraints}
+
+### 进阶要求
+
+{problem_followup}
 
 
 ## 💡 解题过程
