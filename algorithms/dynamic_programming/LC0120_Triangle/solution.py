@@ -1,10 +1,10 @@
 """
-LeetCode题目: {leetcode_title}
-题目编号: {problem_number}
-难度: {difficulty}
-题目链接: https://leetcode.cn/problems/{problem_slug}/
+LeetCode题目: Triangle
+题目编号: 120
+难度: 中等
+题目链接: https://leetcode.cn/problems/triangle/
 
-解题日期: {solve_date}
+解题日期: 2025-09-25
 """
 
 import unittest

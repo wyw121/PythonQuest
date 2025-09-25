@@ -96,19 +96,6 @@
 					"focus": false,
 					"panel": "shared"
 				}
-			},
-			{
-				"label": "创建新的LeetCode题目",
-				"type": "shell",
-				"command": "C:/Users/wywyw/AppData/Local/Programs/Python/Python312/python.exe",
-				"args": ["tools/new_leetcode.py"],
-				"group": "build",
-				"presentation": {
-					"echo": true,
-					"reveal": "always",
-					"focus": true,
-					"panel": "shared"
-				}
 			}
 		]
 	}
