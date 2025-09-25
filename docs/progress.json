@@ -1,0 +1,33 @@
+{
+  "generated_at": "D:\\repositories\\PythonQuest",
+  "stats": {
+    "total": 1,
+    "completed": 1,
+    "in_progress": 0,
+    "not_started": 0,
+    "by_category": {
+      "array": {
+        "total": 1,
+        "completed": 1
+      }
+    },
+    "by_difficulty": {
+      "简单": {
+        "total": 1,
+        "completed": 1
+      }
+    }
+  },
+  "problems": [
+    {
+      "number": 1,
+      "title": "Two Sum",
+      "category": "array",
+      "difficulty": "简单",
+      "status": "已完成",
+      "has_solution": true,
+      "has_notes": true,
+      "path": "D:\\repositories\\PythonQuest\\algorithms\\array\\LC0001_Two_Sum"
+    }
+  ]
+}

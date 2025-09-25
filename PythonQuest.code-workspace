@@ -1,0 +1,115 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		// Python设置
+		"python.defaultInterpreterPath": "C:/Users/wywyw/AppData/Local/Programs/Python/Python312/python.exe",
+		"python.testing.unittestEnabled": true,
+		"python.testing.unittestArgs": ["-v", "-s", ".", "-p", "*test*.py"],
+		"python.linting.enabled": true,
+		"python.linting.pylintEnabled": false,
+		"python.linting.flake8Enabled": true,
+		"python.formatting.provider": "black",
+
+		// 编辑器设置
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": true
+		},
+		"editor.rulers": [79, 120],
+
+		// 文件设置
+		"files.encoding": "utf8",
+		"files.eol": "\n",
+		"files.trimTrailingWhitespace": true,
+		"files.insertFinalNewline": true,
+
+		// 工作区特定设置
+		"explorer.fileNesting.enabled": true,
+		"explorer.fileNesting.patterns": {
+			"*.py": "${capture}.md, test_${capture}.py"
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-python.python",
+			"ms-python.flake8",
+			"ms-python.black-formatter",
+			"yzhang.markdown-all-in-one",
+			"shd101wyy.markdown-preview-enhanced"
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Python: 当前文件",
+				"type": "python",
+				"request": "launch",
+				"program": "${file}",
+				"console": "integratedTerminal",
+				"cwd": "${fileDirname}"
+			},
+			{
+				"name": "Python: 单元测试",
+				"type": "python",
+				"request": "launch",
+				"module": "unittest",
+				"args": ["${file}"],
+				"console": "integratedTerminal",
+				"cwd": "${workspaceFolder}"
+			}
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "运行当前Python文件",
+				"type": "shell",
+				"command": "C:/Users/wywyw/AppData/Local/Programs/Python/Python312/python.exe",
+				"args": ["${file}"],
+				"group": {
+					"kind": "build",
+					"isDefault": true
+				},
+				"presentation": {
+					"echo": true,
+					"reveal": "always",
+					"focus": false,
+					"panel": "shared"
+				},
+				"problemMatcher": []
+			},
+			{
+				"label": "运行单元测试",
+				"type": "shell",
+				"command": "C:/Users/wywyw/AppData/Local/Programs/Python/Python312/python.exe",
+				"args": ["-m", "unittest", "${file}", "-v"],
+				"group": "test",
+				"presentation": {
+					"echo": true,
+					"reveal": "always",
+					"focus": false,
+					"panel": "shared"
+				}
+			},
+			{
+				"label": "创建新的LeetCode题目",
+				"type": "shell",
+				"command": "C:/Users/wywyw/AppData/Local/Programs/Python/Python312/python.exe",
+				"args": ["tools/new_leetcode.py"],
+				"group": "build",
+				"presentation": {
+					"echo": true,
+					"reveal": "always",
+					"focus": true,
+					"panel": "shared"
+				}
+			}
+		]
+	}
+}
