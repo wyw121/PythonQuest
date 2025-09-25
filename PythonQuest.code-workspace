@@ -31,7 +31,13 @@
 		"explorer.fileNesting.enabled": true,
 		"explorer.fileNesting.patterns": {
 			"*.py": "${capture}.md, test_${capture}.py"
-		}
+		},
+
+		// GitHub Copilot设置 - 禁用自动补全
+		"github.copilot.enable": {
+			"*": false
+		},
+		"github.copilot.editor.enableAutoCompletions": false
 	},
 	"extensions": {
 		"recommendations": [

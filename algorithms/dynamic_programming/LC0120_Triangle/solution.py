@@ -12,11 +12,13 @@ from typing import List, Optional
 
 
 class Solution:
-    def solve(self, *args):
-        """
-        解题方法
-        """
-        pass
+
+    def minimumTotal(self, triangle):
+        a = len(triangle)
+        for i in range(a - 2, -1, -1):
+            for j in range(0, len(triangle[i])):
+                triangle[i][j] += min(triangle[i + 1][j], triangle[i + 1][j + 1])
+        return triangle[0][0]
 
 
 class TestSolution(unittest.TestCase):
