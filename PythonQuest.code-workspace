@@ -17,7 +17,7 @@
 		// 编辑器设置
 		"editor.formatOnSave": true,
 		"editor.codeActionsOnSave": {
-			"source.organizeImports": true
+			"source.organizeImports": "explicit"
 		},
 		"editor.rulers": [79, 120],
 
@@ -37,7 +37,10 @@
 		"github.copilot.enable": {
 			"*": false
 		},
-		"github.copilot.editor.enableAutoCompletions": false
+		"github.copilot.editor.enableAutoCompletions": false,
+
+		// AI工作流配置 - 强制遵循标准流程
+		"copilot.instructions": "当用户发送LeetCode题目时，必须先读取 docs/ai_workflow.md 文件，严格按照其中定义的步骤执行。绝对不要解答题目，只创建空白模板文件。"
 	},
 	"extensions": {
 		"recommendations": [
