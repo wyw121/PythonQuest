@@ -35,7 +35,12 @@
 
 		// GitHub Copilot设置 - 禁用自动补全
 		"github.copilot.enable": {
-			"*": false
+			"*": true,
+			"plaintext": true,
+			"markdown": true,
+			"scminput": false,
+			"sql": true,
+			"python": true
 		},
 		"github.copilot.editor.enableAutoCompletions": false,
 

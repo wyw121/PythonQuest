@@ -1,0 +1,37 @@
+{
+  // 完全禁用 GitHub Copilot（AI 代码生成）
+  "github.copilot.enable": {
+    "*": false,
+    "python": false,
+    "markdown": false,
+    "plaintext": false
+  },
+  "github.copilot.editor.enableAutoCompletions": false,
+  
+  // 禁用内联建议（灰色的代码提示）
+  "editor.inlineSuggest.enabled": false,
+  
+  // 禁用代码片段（snippet）
+  "editor.snippetSuggestions": "none",
+  "editor.tabCompletion": "off",
+  
+  // 禁用自动触发的建议，但保留手动触发（Ctrl+Space）
+  "editor.quickSuggestions": {
+    "other": "off",
+    "comments": "off",
+    "strings": "off"
+  },
+  "editor.suggestOnTriggerCharacters": false,
+  
+  // 保留基本的 IntelliSense 参数补全功能
+  "editor.wordBasedSuggestions": "matchingDocuments",  // 允许基于文档的单词建议
+  "editor.acceptSuggestionOnEnter": "off",  // Enter 不接受建议
+  "editor.acceptSuggestionOnCommitCharacter": false,  // 输入符号不自动接受
+  
+  // 保留参数提示
+  "editor.parameterHints.enabled": true,
+  
+  // 禁用 Python 的主动补全，但保留基本功能
+  "python.analysis.autoImportCompletions": false,
+  "python.analysis.completeFunctionParens": false
+}
