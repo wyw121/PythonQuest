@@ -42,6 +42,7 @@
 ### 数组 (Array)
 
 - 1\. 两数之和: [`TwoSum_1.py`](algorithms/array/LC0001_Two_Sum/solution.py)
+- 407\. 接雨水 II: [`LC0407_Trapping_Rain_Water_II`](algorithms/array/LC0407_Trapping_Rain_Water_II/solution.py)
 - 1518\. 换水问题: [`LC1518_Water_Bottles`](algorithms/array/LC1518_Water_Bottles/solution.py)
 
 ### 字符串 (String)
