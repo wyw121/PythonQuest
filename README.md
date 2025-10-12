@@ -58,6 +58,7 @@
 ### 动态规划 (Dynamic Programming)
 
 - 120\. 三角形最小路径和: [`LC0120_Triangle`](algorithms/dynamic_programming/LC0120_Triangle/solution.py)
+- 3494\. 酿造药水需要的最少总时间: [`LC3494_Minimum_Total_Time_to_Brew_Potions`](algorithms/dynamic_programming/LC3494_Minimum_Total_Time_to_Brew_Potions/solution.py)
 
 ### 图 (Graph)
 
